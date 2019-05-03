@@ -1,0 +1,156 @@
+@import './variables.scss';
+
+.modalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    
+    
+    .popUp {
+        width: 500px;
+        height: 400px;
+        position: fixed;
+        top: 15%;
+        left: 18%;    
+
+        @media (max-width: 767px){
+            top: 5%;
+            left: 6%;
+            width: 88%;
+            height: 92%;
+        }
+        @media(min-width: 1024px){
+            left: 25%;
+        }
+        @media(min-width: $desktop){
+            left: 32%;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 32px 8px 28px;
+            background: $white;
+            border-radius: 8px;
+
+            @media (max-width: 767px){
+                padding: 32px 26px 28px;
+                height: 76%;
+                align-items: center;
+                justify-content: center;
+            }
+            &--title {
+                margin: 0 0 34px; 
+                font-size: 35px;
+                text-align: left;
+                text-align: center;
+
+                @media (max-width: 767px){
+                    font-size: 25px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    .formInput {
+        display: inline-flex;
+        flex-direction: column;
+
+        @media (max-width: 767px){
+            width: 100%;
+        }
+    }
+    .titleLabel, .statusLabel {
+        display: flex;
+        flex-direction: column;
+        @include H5__Labels__Desktop;
+        color: $label;
+
+        @media (min-width: $tablet){
+            padding-bottom: 0;
+        }
+    }
+    .statusLabel {
+        margin-top: 4px;
+
+        @media (min-width: $tablet){
+            margin-bottom: 24px;
+        }
+    }
+    .formField, .descriptField, .countryField {
+        margin-top: 8px;
+        margin-bottom: 24px;
+        margin-right: 0; 
+        padding-top: 10px;
+        padding-left: 16px;
+        background-color: #FAFAFA;
+        border-radius: 4px;
+        border: solid 1px $border;
+        resize: none;
+        outline: none;
+
+        @media (max-width: 767px){
+            margin-top: 5px;
+            height: 28px;
+            padding-top: 12px;
+            padding-left: 18px;
+        }
+    }
+    .descriptField {
+        height: 104px; 
+
+        @media (min-width: $tablet){
+            width: 383px;
+            height: 50px; 
+        }
+    }
+    .formButtons {
+        display: flex;
+        justify-content: flex-end;
+
+        @media (min-width: $tablet){
+            width: 403px;
+        }
+        @media (max-width: 767px){
+            flex-direction: column;
+        }
+        .cancelText {
+            color: $Blue;
+            border: none;
+            background-color: unset;
+            outline: none;
+
+            @media (max-width: 767px){
+                display: none;
+            }
+        }
+        .saveButton {
+            background-color: $Blue;
+            color: $white;
+            border-radius: 4px;
+            width: 140px;
+            height: 48px;
+            margin-left: 48px; 
+            outline: none;
+            border: none;
+
+            @media (max-width: 767px){
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+        .cancelTextMobile {
+            margin-top: 15px;
+            color: $Blue;
+            border: none;
+            background-color: unset;
+
+            @media (min-width: $tablet){
+                display: none;
+            }
+        }
+    }
+}

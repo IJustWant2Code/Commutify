@@ -1,0 +1,87 @@
+@import url("Fonts/stylesheet.css");
+
+*{
+    font-size:16px;
+}
+//Varibles
+$Blue: #004892; 
+$DarkBlue: #002F5F;
+$black: #323232;
+$white: #FFFFFF;
+$label: #AFAFAF; 
+$background: #FAFAFA; 
+$border: #E1E1E1; 
+
+$font: "AvenirNext LT Pro";
+
+$desktop: 1440px;
+$tablet: 768px;
+$mobileL: 425px;
+$mobile: 320px;
+
+
+@mixin H1__Desktop {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+@mixin H2__Desktop {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin H3__Desktop {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin H4__Paragraph__Desktop {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@mixin H4__Lists__Desktop {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin H4__Lists__Desktop {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin H5__Labels__Desktop {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+@mixin H1__Mobile {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin H2__Mobile {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@mixin H4__Paragraph__Mobile {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+@mixin H4__Lists__Mobile {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+@mixin H5__Labels__Mobile {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}

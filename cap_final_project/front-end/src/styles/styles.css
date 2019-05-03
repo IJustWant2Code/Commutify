@@ -1,0 +1,318 @@
+@import url("Fonts/stylesheet.css");
+* {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "AvenirNext LT Pro";
+}
+
+body {
+  background: -webkit-gradient(linear, right top, left top, from(#4181C1), to(#0D67C1));
+  background: linear-gradient(to left, #4181C1, #0D67C1);
+}
+
+.logout {
+  position: absolute;
+  right: 32px;
+  top: 25px;
+}
+
+@media (min-width: 768px) {
+  .loginPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.CommutifyLogo {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .CommutifyLogo {
+    max-width: 50%;
+  }
+}
+
+.loginButton {
+  background: #004892;
+  width: 172px;
+  height: 86px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4%;
+  text-align: center;
+  border: none;
+  color: #FFFFFF;
+  outline: none;
+}
+
+.loginButton:hover {
+  color: #1DB954;
+}
+
+.loginButton__spotify {
+  width: 94px;
+  margin-top: 10px;
+}
+
+.navBar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #05284C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px 0;
+}
+
+.navBar__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navBar .iconLink {
+  text-decoration: none;
+}
+
+.navBar .iconText {
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.userProfile {
+  margin: 15px 0;
+}
+
+.userProfile__pic {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.userProfile__name {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.userProfile__playlistNum {
+  font-size: 18px;
+}
+
+.userPlaylists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 15px 80px;
+}
+
+@media (min-width: 768px) {
+  .userPlaylists {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.playlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0px 20px;
+}
+
+@media (min-width: 768px) {
+  .playlist {
+    margin: 10px 10px 20px;
+  }
+}
+
+.playlist .playlistLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: rgba(1, 1, 1, 0.5);
+  width: 174px;
+  height: 174px;
+  text-decoration: none;
+  word-break: keep-all;
+}
+
+.playlist__image {
+  width: 174px;
+  height: 174px;
+  border-radius: 4px;
+}
+
+.playlist__name {
+  font-size: 24px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 5px;
+  text-align: center;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.playlist__numOfSongs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  color: #E1E1E1;
+}
+
+.kebabItem {
+  position: absolute;
+  margin-top: 142px;
+  margin-left: 10px;
+}
+
+.kebabButton {
+  width: 65px;
+  height: 38px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.createNewButton {
+  background: #004892;
+  width: 132px;
+  height: 5rem;
+  border-radius: 4%;
+  text-align: center;
+  border: none;
+  position: fixed;
+  bottom: 15%;
+  right: 4%;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.createNewButton:hover {
+  background: #002F5F;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 80px;
+  height: 0;
+  max-width: 100%;
+  height: auto;
+  margin: 6px 5px;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.playlistInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.playlistInfo__coverArt {
+  width: 153px;
+  height: 224px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.playlistInfo .playlistDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: left;
+  color: #05284C;
+  font-weight: bold;
+  word-break: keep-all;
+}
+
+.playlistInfo .playlistDetails__title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.playlistInfo .playlistDetails__descript, .playlistInfo .playlistDetails__length, .playlistInfo .playlistDetails__username {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.tracks {
+  margin-bottom: 80px;
+}
+/*# sourceMappingURL=styles.css.map */

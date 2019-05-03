@@ -1,0 +1,262 @@
+@import url("Fonts/stylesheet.css");
+* {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "AvenirNext LT Pro";
+}
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+.modalBackground .popUp {
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  top: 15%;
+  left: 18%;
+}
+
+@media (max-width: 767px) {
+  .modalBackground .popUp {
+    top: 5%;
+    left: 6%;
+    width: 88%;
+    height: 92%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modalBackground .popUp {
+    left: 25%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .modalBackground .popUp {
+    left: 32%;
+  }
+}
+
+.modalBackground .popUp__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 8px 28px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .modalBackground .popUp__content {
+    padding: 32px 26px 28px;
+    height: 76%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.modalBackground .popUp__content--title {
+  margin: 0 0 34px;
+  font-size: 35px;
+  text-align: left;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .modalBackground .popUp__content--title {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.modalBackground .formInput {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .modalBackground .formInput {
+    width: 100%;
+  }
+}
+
+.modalBackground .titleLabel, .modalBackground .statusLabel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 12px;
+  line-height: 20px;
+  color: #AFAFAF;
+}
+
+@media (min-width: 768px) {
+  .modalBackground .titleLabel, .modalBackground .statusLabel {
+    padding-bottom: 0;
+  }
+}
+
+.modalBackground .statusLabel {
+  margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+  .modalBackground .statusLabel {
+    margin-bottom: 24px;
+  }
+}
+
+.modalBackground .formField, .modalBackground .descriptField, .modalBackground .countryField {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  margin-right: 0;
+  padding-top: 10px;
+  padding-left: 16px;
+  background-color: #FAFAFA;
+  border-radius: 4px;
+  border: solid 1px #E1E1E1;
+  resize: none;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .modalBackground .formField, .modalBackground .descriptField, .modalBackground .countryField {
+    margin-top: 5px;
+    height: 28px;
+    padding-top: 12px;
+    padding-left: 18px;
+  }
+}
+
+.modalBackground .descriptField {
+  height: 104px;
+}
+
+@media (min-width: 768px) {
+  .modalBackground .descriptField {
+    width: 383px;
+    height: 50px;
+  }
+}
+
+.modalBackground .formButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .modalBackground .formButtons {
+    width: 403px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modalBackground .formButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.modalBackground .formButtons .cancelText {
+  color: #004892;
+  border: none;
+  background-color: unset;
+}
+
+@media (max-width: 767px) {
+  .modalBackground .formButtons .cancelText {
+    display: none;
+  }
+}
+
+.modalBackground .formButtons .saveButton {
+  background-color: #004892;
+  color: #FFFFFF;
+  border-radius: 4px;
+  width: 140px;
+  height: 48px;
+  margin-left: 48px;
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .modalBackground .formButtons .saveButton {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.modalBackground .formButtons .cancelTextMobile {
+  margin-top: 15px;
+  color: #004892;
+  border: none;
+  background-color: unset;
+}
+
+@media (min-width: 768px) {
+  .modalBackground .formButtons .cancelTextMobile {
+    display: none;
+  }
+}
+
+.modalBackground .countryField {
+  padding-top: 0;
+  height: 44px;
+}
+
+@media (min-width: 768px) {
+  .modalBackground .countryField {
+    height: 52px;
+  }
+}
+
+.modalBackground .stockField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+.modalBackground .stockField .stockText {
+  margin: 0;
+}
+/*# sourceMappingURL=modal.css.map */
