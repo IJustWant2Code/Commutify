@@ -31,7 +31,7 @@ export default class Main extends Component {
         }))
     
 
-        fetch('https://api.spotify.com/v1/me/playlists', {
+        fetch('https://api.spotify.com/v1/me/playlists?limit=50', {
         headers: {'Authorization': 'Bearer ' + accessToken}
         }).then(response => response.json())
         .then(data => this.setState({
@@ -72,7 +72,7 @@ export default class Main extends Component {
                     playlists: res.data
                 })
                 
-        fetch('https://api.spotify.com/v1/me/playlists', {
+        fetch('https://api.spotify.com/v1/me/playlists?limit=50', {
             headers: {'Authorization': 'Bearer ' + token}
             }).then(response => response.json())
                 .then(data => this.setState({
